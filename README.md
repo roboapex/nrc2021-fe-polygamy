@@ -1,1 +1,1 @@
-# Isosekcy
+# Poly-gamy
