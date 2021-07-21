@@ -19,7 +19,7 @@ from ev3dev2.sensor import INPUT_1
 in1 = LegoPort(INPUT_1)
 in1.mode = 'other-i2c'
 # Short wait for the port to get ready
-time.sleep(0.5)
+time.sleep(1)
 
  # Settings for I2C (SMBus(3) for INPUT_1)
 bus = SMBus(3)
