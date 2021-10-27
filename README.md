@@ -37,6 +37,12 @@ To follow and prepare us for industry-like work, we were tasked to make **schema
 > *Provide brief description*
 
 
+## Code
 
+### Explanation of each func/code section?
+
+```python
+#future code here
+```
 
 
