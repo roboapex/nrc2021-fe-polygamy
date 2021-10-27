@@ -33,6 +33,8 @@ To follow and prepare us for industry-like work, we were tasked to make **schema
 **of the electromagnetic components** that we used in our bot
 
 > *Insert Diagrams here*
+> ![block diagram](https://user-images.githubusercontent.com/50788385/139029950-576a6c91-2e48-4a54-a84e-46bedad221aa.png)
+
 > 
 > *Provide brief description*
 
