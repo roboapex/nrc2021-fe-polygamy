@@ -33,15 +33,19 @@ To follow and prepare us for industry-like work, we were tasked to make **schema
 **of the electromagnetic components** that we used in our bot
 
 > *Insert Diagrams here*
-> ![block diagram](https://user-images.githubusercontent.com/50788385/139029950-576a6c91-2e48-4a54-a84e-46bedad221aa.png)
-
 > 
 > *Provide brief description*
 
 
 ## Code
 
-### Explanation of each func/code section?
+### Explanation of the code
+Below is the basic idea of our code
+> ![block diagram](https://user-images.githubusercontent.com/50788385/139029950-576a6c91-2e48-4a54-a84e-46bedad221aa.png)
+
+From here, we translated our idea in python,
+
+and by using Ev3dev, our Mindstorm is able to use python as a langauage.
 
 ```python
 #future code here
