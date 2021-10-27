@@ -24,11 +24,7 @@ For the parts in the robots, we used:
 > *Add a brief captions to each of the pictures*
 
 ## Schematic
-To follow and prepare us for industry-like work,
-
-we were tasked to make **schematic diagram of the electromagnetic components**
-
-that we used in our bot
+To follow and prepare us for industry-like work, we were tasked to make **schematic diagram of the electromagnetic components** that we used in our bot
 
 > *Insert Diagrams here*
 > *Provide brief description*
