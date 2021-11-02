@@ -2,19 +2,19 @@
 
 print('import')
 import time
-from ev3dev2.motor import LargeMotor, OUTPUT_A, OUTPUT_D
+from ev3dev2.motor import LargeMotor, OUTPUT_A, OUTPUT_D, OUTPUT_B, MediumMotor
 from ev3dev2.sensor.lego import UltrasonicSensor
-from ev3dev2.sensor import INPUT_3, INPUT_4, INPUT_1
+from ev3dev2.sensor import INPUT_2, INPUT_3, INPUT_1
 
 frontUltra = UltrasonicSensor(INPUT_1)
-leftUltra = UltrasonicSensor(INPUT_3)
-rightUltra = UltrasonicSensor(INPUT_4)
+leftUltra = UltrasonicSensor(INPUT_2)
+rightUltra = UltrasonicSensor(INPUT_3)
 
-leftMotor = LargeMotor(OUTPUT_A)
-rightMotor = LargeMotor(OUTPUT_D)
+leftMotor = MediumMotor(OUTPUT_B)
+rightMotor = MediumMotor(OUTPUT_D)
 
 
-speed = 50
+speed = -20
 integral = 0
 last_error = 0
 kp = 0.5
