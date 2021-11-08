@@ -10,8 +10,8 @@ In this team are:
 - **Irman** Zafyree
 
 > *Insert Picture Here*
->
-> *From left to right, ()*
+><img width="1440" alt="Team_FE006_funny_photo" src="https://user-images.githubusercontent.com/50788385/140704470-7d6a54a8-53a1-42ff-8bae-c990ff63f703.png">
+> *From left to right to bottom, (Jian Wen, Le Yang, Irman)*
 
 ## Robot Design
 We built our robot using the Lego Ev3 Mindstorms
