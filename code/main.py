@@ -3,11 +3,11 @@ import time
 import asyncio
 
 from ev3dev2.display import Display
-from ev3dev2.motor import MediumMotor, OUTPUT_A, OUTPUT_B, SpeedPercent, MoveTank
+from ev3dev2.motor import MediumMotor, OUTPUT_B, OUTPUT_D, SpeedPercent, MoveTank
 from ev3dev2.port import LegoPort
 from ev3dev2.sensor import INPUT_1, INPUT_2, INPUT_3, INPUT_4, UltrasonicSensor
 
-from camera.py import colour()
+from camera import colour
 
 frontUltra = UltrasonicSensor(INPUT_1)
 leftUltra = UltrasonicSensor(INPUT_2)
@@ -16,10 +16,21 @@ rightUltra = UltrasonicSensor(INPUT_3)
 leftMotor = MediumMotor(OUTPUT_B)
 rightMotor = MediumMotor(OUTPUT_D)
 
-sped = 30"
+sped = 30
+
+green = []
+red = []
 
 # Sigmap 1 is trained on red
 # Sigmap 2 is trained on green
+
+def forward(speed, distance, brake):
+    # Figure out how many rotations is 1m
+    # Use ratio to get the correct rot to m
+    # Move robot and flow to next step in a smooth way
+    rotPm = 3.45
+    leftMotor.on_for_rotations(speed, distance * rotPm * -1, brake=brake, block=False)
+    rightMotor.on_for_rotations(speed, distance * rotPm  , brake=brake, block=True)
 
 def forwardTill(speed,dist):
     while frontUltra.distance_centimeters > dist:
@@ -35,20 +46,28 @@ def spinTurn(speed,dist):
     rightMotor.on_for_rotations(-speed, ratio * dist, brake=True, block=True)
 
 def section():
-    colour(1) = green[]
-    colour(2) = red[]
-    if (red[] != []) and (green[] == []):
+    colour(1) = green
+    colour(2) = red
+    if (red != []) and (green == []):
         if red[1] > 157.5:
-            farright()
+            spinTurn(sped, 1)
+            forwardTill(sped, 5)
+            forward(sped, 20, True)
         else:
-            right()
-    elif (red[] == []) and (green[] != []):
+            spinTurn(sped, 1)
+            forwardTill(sped, 15)
+            forward(sped, 20, True)
+    elif (red == []) and (green != []):
         if green[1] < 157.5:
-            farleft()
+            spinTurn(-sped, 1)
+            forwardTill(sped, 5)
+            forward(sped, 20, True)
         else:
-            left()
+            spinTurn(-sped, 1)
+            forwardTill(sped, 15)
+            forward(sped, 20, True)
     else: #no blocks detected
-        forwardTill(sped, 100, True)
+        forwardTill(sped, 33, True)
 
 loop = asyncio.get_event_loop() #Run ultrasonic check alongside main code
 
@@ -108,15 +127,11 @@ async def ultrasonic():
 
 loop.create_task(ultrasonic())
 
-for i in range(3):
-    
+for i in range(12):
     forwardTill(sped, 70)
-    spinTurn(sped, a)
+    spinTurn(sped, 1)
     section()
     section()
     section()
-
-
-
 
 loop.run_forever()

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from time import sleep
+import time
 from ev3dev2.sensor import Sensor, INPUT_4
 from ev3dev2.port import LegoPort
 
@@ -9,7 +9,7 @@ from smbus import SMBus
 in1 = LegoPort(INPUT_4)
 in1.mode = "other-i2c"
 # Short wait for port to get ready
-sleep(0.5)
+time.sleep(0.5)
 
 # Settings for I2C (SMBus(6)) for INPUT_4
 bus = SMBus(6)
