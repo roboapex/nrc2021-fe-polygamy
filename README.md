@@ -39,7 +39,7 @@ To follow and prepare us for industry-like work, we were tasked to make **schema
 
 ### Explanation of the code
 Below is the basic idea of our code
-> ![block diagram](https://user-images.githubusercontent.com/50788385/139029950-576a6c91-2e48-4a54-a84e-46bedad221aa.png)
+> <img width="500" alt="good file naming" src="https://user-images.githubusercontent.com/50788385/139029950-576a6c91-2e48-4a54-a84e-46bedad221aa.png">
 
 From here, we translated our idea in python,
 
