@@ -49,4 +49,7 @@ and by using Ev3dev, our Mindstorm is able to use python as a langauage.
 #future code here
 ```
 
+## Our Logbook + Progress
+> https://pogger-123.notion.site/Poly-Gamy-d7bd3709444c48ccb13cd61b1ed6ce8b
+
 
