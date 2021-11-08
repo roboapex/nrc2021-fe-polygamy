@@ -32,9 +32,6 @@ To follow and prepare us for industry-like work, we were tasked to make **schema
 
 > <img width="500" alt="good file naming" src="https://user-images.githubusercontent.com/50788385/140704161-0de1a45b-c173-4359-a202-91c9bb3ae312.png">
 
-> *Provide brief description*
-
-
 ## Code
 
 ### Explanation of the code
@@ -45,9 +42,7 @@ From here, we translated our idea in python,
 
 and by using Ev3dev, our Mindstorm is able to use python as a langauage.
 
-```python
-#future code here
-```
+![Here](/code/main.py)
 
 ## Our Logbook + Progress
 > https://pogger-123.notion.site/Poly-Gamy-d7bd3709444c48ccb13cd61b1ed6ce8b
