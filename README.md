@@ -23,17 +23,15 @@ For the parts in the robots, we used:
 - 1 Pixy 2 Camera
 
 #### Pictures Of Robots
-> *Insert the 6 pictures here*
-> 
-> *Add a brief captions to each of the pictures*
+> <img width="720" alt="epic file name" src="https://user-images.githubusercontent.com/50788385/140704026-874164c9-c4af-454f-a4f9-6f4e7c646463.png">
 
 ## Schematic
 To follow and prepare us for industry-like work, we were tasked to make **schematic diagram**
 
 **of the electromagnetic components** that we used in our bot
 
-> *Insert Diagrams here*
-> 
+> <img width="779" alt="good file naming" src="https://user-images.githubusercontent.com/50788385/140704161-0de1a45b-c173-4359-a202-91c9bb3ae312.png">
+
 > *Provide brief description*
 
 
